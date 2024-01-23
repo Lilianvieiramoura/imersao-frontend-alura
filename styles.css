@@ -230,3 +230,55 @@ body {
   padding: 8px;
   border-radius: 20px;
 }
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 8px;
+  position: fixed;
+  bottom: 0;
+  background-image: linear-gradient(to right, #AD2997, #5176fc);
+}
+
+.footer__container .footer__content{
+  display: flex;
+  flex-direction: column;
+}
+
+footer .text {
+  padding: 5px;
+  color: white;
+  font-family: "DM Sans", sans-serif;
+}
+
+.footer__container .footer__content .title {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.footer__container .footer_content .subtitle {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.footer__container .footer__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "DM Sans", sans-serif;
+  color: black;
+  text-decoration: none;
+  border-radius: 30px;
+  margin-right: 30px;
+  border: 0px;
+  width: 190px;
+}
+
+.footer__container .footer__button a {
+  text-decoration: none;
+}
+
