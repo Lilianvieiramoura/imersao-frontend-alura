@@ -1,5 +1,6 @@
 body {
   background-color: black;
+  font-family: var(--font-dm-sans);
 }
 
 .sidebar {
@@ -42,7 +43,6 @@ body {
   font-weight: 600;
   font-size: 14px;
   text-decoration: none;
-  font-family: "DM Sans", sans-serif;
 }
 
 .library {
@@ -71,7 +71,6 @@ body {
   border: 0px;
   font-size: 14px;
   font-weight: 700;
-  font-family: "DM Sans", sans-serif;
   text-align: center;
   text-decoration: none;
   text-transform: none;
@@ -111,7 +110,6 @@ body {
 .section-playlist__content .text {
   padding-bottom: 14px;
   color: white;
-  font-family: "DM Sans", sans-serif;
 }
 
 .section-playlist__content .title {
@@ -131,7 +129,6 @@ body {
   border-radius: 20px;
   font-size: 12px;
   font-weight: 700;
-  font-family: "DM Sans", sans-serif;
   text-decoration: none;
   text-transform: none;
   padding: 10px;
@@ -157,7 +154,6 @@ body {
 .section-podcasts__content .text {
   padding-bottom: 14px;
   color: white;
-  font-family: "DM Sans", sans-serif;
 }
 
 .section-podcasts__content .title {
@@ -177,7 +173,6 @@ body {
   border-radius: 20px;
   font-size: 12px;
   font-weight: 700;
-  font-family: "DM Sans", sans-serif;
   text-decoration: none;
   text-transform: none;
   padding: 10px;
@@ -249,7 +244,6 @@ body {
 footer .text {
   padding: 5px;
   color: white;
-  font-family: "DM Sans", sans-serif;
 }
 
 .footer__container .footer__content .title {
@@ -269,7 +263,6 @@ footer .text {
   background-color: white;
   font-size: 15px;
   font-weight: 700;
-  font-family: "DM Sans", sans-serif;
   text-decoration: none;
   border-radius: 30px;
   margin-right: 30px;
