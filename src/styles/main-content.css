@@ -22,16 +22,19 @@
 }
 
 .header__navigation .navigation .arrow-left {
-  margin: 1.25rem;
+  margin-right: 1.25rem;
 }
 
-.arrow-left, .arrow-right {
+.arrow-left,
+.arrow-right {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 32px;
+  height: 32px;
   background: var(--bg-icon);
-  background-color: rgba(0, 0, 0, 0.07);
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
   border: none;
   cursor: pointer;
 }
@@ -46,7 +49,8 @@
   align-items: center;
   width: 364px;
   height: 48px;
-  background-color: var(--bg-search);
+  margin-left: 8px;
+  background-color: var(--bg-search);;
   border-radius: 500px;
   border: 1px solid transparent;
 }
@@ -54,17 +58,18 @@
 .header__search img {
   width: 16px;
   height: 16px;
-  margin-left: 12px;
+  margin-left: 10px;
 }
 
 .header__search input {
   background: transparent;
   border: none;
-  padding: 0px 100px 0px 12px;
+  padding: 0px 100px 0 12px;
   color: #fff;
   text-overflow: ellipsis;
-  overflow: hidden;
   outline: none;
+  text-overflow: ellipsis;
+  overflow: hidden;
   white-space: nowrap;
 }
 
@@ -80,7 +85,7 @@
 .header__login .login {
   width: 100px;
   height: 48px;
-  color: #000;
+  color: var(--text-base-dark);
   font-size: 16px;
   font-weight: 700;
   border-radius: 40px;
@@ -92,14 +97,13 @@
 
 .header__login .subscribe:hover {
   transform: scale(1.04);
-  color: (var(--text-base-light));
+  color: var(--text-base-light);
 }
 
 .header__login .login:hover {
   transform: scale(1.04);
 }
 
-/* playlist*/
 .playlist-container {
   height: 68vh;
   padding-top: 16px;
@@ -125,17 +129,20 @@
   font-weight: 700;
 }
 
-/* scroll */
+/* SCROLL */
 .offer__scroll-container {
   max-height: 43vh;
-  margin: 34px;
+  margin: 24px;
   overflow-y: auto;
+}
+
+.offer__scroll-container::-webkit-scrollbar {
+  width: 1px;
 }
 
 .offer__scroll-container::-webkit-scrollbar-thumb {
   background-color: transparent;
 }
-/* fim scroll*/
 
 .offer__list-item {
   /* display: grid;
@@ -156,9 +163,9 @@
 /* principais são static, relative, absolute, fixed, e sticky. */
 
 .cards {
-  position: relative;  /* relative:
-  Comportamento em relação a si mesmo: O elemento é posicionado em relação à sua posição original.
-  Mantém espaço original: O espaço original que o elemento ocuparia não é alterado, mas você pode movê-lo com top, right, bottom ou left. */
+  position: relative; /* relative:
+                          Comportamento em relação a si mesmo: O elemento é posicionado em relação à sua posição original.
+                          Mantém espaço original: O espaço original que o elemento ocuparia não é alterado, mas você pode movê-lo com top, right, bottom ou left. */
   width: 220px;
   height: 200px;
   overflow: hidden;
@@ -167,9 +174,10 @@
 
 .cards span {
   padding: 16px;
-  position: absolute; /* absolute:
-  Comportamento em relação ao ancestral posicionado mais próximo ou ao elemento raiz (se nenhum ancestral estiver posicionado).
-  Remove do fluxo normal: O elemento é removido do fluxo normal do documento, o que significa que outros elementos agem como se o elemento não estivesse presente. */
+  position: absolute;
+  /* absolute:
+                          Comportamento em relação ao ancestral posicionado mais próximo ou ao elemento raiz (se nenhum ancestral estiver posicionado).
+                          Remove do fluxo normal: O elemento é removido do fluxo normal do documento, o que significa que outros elementos agem como se o elemento não estivesse presente. */
   color: var(--text-base-light);
   font-size: 24px;
   font-weight: 700;
@@ -242,7 +250,7 @@
   display: none;
 }
 
-.grid-container{
+.grid-container {
   grid-gap: var(--grid-gap);
   display: grid;
   grid-template-columns: repeat(var(--column-count), minmax(0, 1fr));
@@ -250,7 +258,7 @@
 }
 
 .artist-card {
-  background-color: #181818;
+  background: #181818;
   border-radius: 8px;
   -ms-flex: 1;
   flex: 1;
