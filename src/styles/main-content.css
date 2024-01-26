@@ -150,12 +150,11 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
   gap: 16px;
   grid-gap: 16px; 
-  margin-bottom: 16px;
 }
 
 .cards {
   position: relative; 
-  width: 220px;
+  width: 210px;
   height: 200px;
   overflow: hidden;
   border-radius: 8px;
